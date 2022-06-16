@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+   background-image: url("./assests/bg-intro-desktop.png");
+   background-color: rgb(255,121,120);
+   width: 90%;
+   height: 100%vh;
+   margin-left: auto;
+  margin-right: auto;
+}
+
+main{
+    display: grid;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    height: 100vh;
+    font-family: 'Times New Roman';
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+    place-content: center;
+
+}
+
+h1{
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    word-spacing: 0.px;
+}
+
+.hero-title{
+    /* margin-right: 20px; */
+    margin: auto;
+}
+
+.hero-title p{
+color: white;
+}
+
+form{
+    /* margin-left: 20px; */
+    background-color: white;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+input{
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid rgb(192, 188, 188);
+}
+
+input:focus {
+    color: gray;
+    border-color: gray;
+    outline: none;
+    box-shadow: 0 0 2px rgb(207, 204, 204);
+  }
+  
+
+button{
+    width: 100%;
+    color: white;
+    border: none;
+    padding: 12px 15px 12px 15px;
+    border-radius: 6px;
+}
+
+.top-btn{
+    background-color: rgb(93,84,163);
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 400px;
+}
+
+.bottom-btn{
+    background-color: rgb(55,204,138);
+    margin-top: 20px;
+}
+
+span{
+    color: red;
+}
+
+footer{
+    margin-top: 20px;
+    font-size: 7px;
+    text-align: center;
+}
+
+footer p{
+    color: rgb(182, 177, 177);
+    padding-left: 2px;
+}
+
+@media only screen and (max-width: 800px){
+
+    body{
+        width: 100%;
+    }
+    h1{
+        font-size: 24px;
+    };
+
+    main {
+        display: block;
+        width: 100%;
+    }
+
+    .wrapper{
+        display: block;
+    }
+
+    .hero-title p{
+        margin-bottom: 40px;
+    }
+}
