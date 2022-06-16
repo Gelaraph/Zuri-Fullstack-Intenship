@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 50%;
+  margin: auto;
+  align-items: center;
+  height: 100vh;
+}
+
+h2 {
+  font-size: 26px;
+  line-height: 30px;
+  font-weight: 400px;
+  color: #faf6f6;
+  margin-bottom: 30px;
+  text-align: start;
+}
+
+p {
+  margin-bottom: 70px;
+  color: rgb(233, 222, 222);
+}
+
+.wrapper {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  width: 50%;
+  margin: auto;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.wrap {
+  height: 420px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  line-height: 25px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.sedan {
+  padding: 50px;
+  background-color: rgb(226, 133, 37);
+  border-radius: 5px 0 0 5px;
+}
+
+.sedan button {
+  color: rgb(226, 133, 37);
+}
+
+.suv {
+  padding: 50px;
+  background-color: rgb(1, 105, 114);
+}
+
+.suv button {
+  color: rgb(1, 105, 114);
+}
+
+.lux {
+  padding: 50px;
+  background-color: rgb(0, 64, 63);
+  border-radius: 0 5px 5px 0;
+}
+
+.lux button {
+  color: rgb(0, 64, 63);
+}
+
+button {
+  border: none;
+  padding: 8px 19px 8px 19px;
+  border-radius: 15px;
+}
+
+button:hover{
+    background-color: inherit;
+    color: white;
+}
+
+img {
+  height: 25px;
+  width: 40px;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,74 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p {
+    margin-top: 90px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.board{
+    width: 560px;
+    height: 600px;
+    margin: 0 auto;
+    padding: 0;
+    border: 1px solid black;
+}
+
+.square{
+    float: left;
+    width: 112px;
+    height: 120px;
+}
+
+
+/* CSS bg-color logic */
+/* If the line is number is odd and square number is odd => bg-color is black;
+If the line number is odd and square number is even => bg-color is blue;
+If the line is number is even and square number is odd => bg-color is blue;
+If the line number is even and square number is even => bg-color is black; */
+
+/* Line 1 */
+.board .line1 .square:nth-child(odd){
+    background-color: black;
+}
+.board .line1 .square:nth-child(even) {
+    background-color: blue;
+}
+
+/* Line 2 */
+.board .line2 .square:nth-child(even){ 
+    background-color: black;
+}
+.board .line2 .square:nth-child(odd) {
+    background-color: blue;
+} 
+
+/* Line 3 */
+.board .line3 .square:nth-child(odd){
+    background-color: black;
+}
+.board .line3 .square:nth-child(even) {
+    background-color: blue;
+}
+
+/* Line 4 */
+.board .line4 .square:nth-child(even){
+    background-color: black;
+}
+.board .line4 .square:nth-child(odd) {
+    background-color: blue;
+}
+
+/* Line 5 */
+.board .line5 .square:nth-child(odd){
+    background-color: black;
+}
+.board .line5 .square:nth-child(even) {
+    background-color: blue;
+}
